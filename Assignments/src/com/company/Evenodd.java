@@ -2,16 +2,15 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Factorial {
+public class Evenodd {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int res = 1;
-        while(n>0){
-            int temp = n;
-            res = res * temp;
-            n--;
+
+        if (n%2==0){
+            System.out.println("Even Number");
+        }else{
+            System.out.println("Odd Number");
         }
-        System.out.println(res);
     }
 }
